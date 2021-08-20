@@ -1,5 +1,5 @@
 import unittest
-from mathA import Operation
+from Difference import Operation
 
 class testMath(unittest.TestCase):
 
