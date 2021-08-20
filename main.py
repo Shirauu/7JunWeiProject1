@@ -24,7 +24,8 @@ class GraphThings:
     dfother03.insert(1, "Month", data2)
 
     dfother03.drop(dfother03.columns[2], inplace=True, axis=1)
-    another = dfother03[dfother03["Year"] >= "2008"]
+    #chagne 2008 to 2010
+    another = dfother03[dfother03["Year"] >= "2010"]
     another.drop(another.iloc[:, 2:20], inplace=True, axis=1)
     another.drop(another.iloc[:, 13:18], inplace=True, axis=1)
     another1 = dfother03[dfother03["Year"] == "2008"]
